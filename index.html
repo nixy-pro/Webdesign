@@ -794,32 +794,79 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiple Buttons in a Row</title>
+<style>
+  /* Container untuk tombol */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Menengahkan tombol di dalam container */
+    gap: 10px; /* Jarak antar tombol */
+    margin-top: 20px; /* Jarak atas container */
+  }
 
-        <section class="contact-form">
+  /* Style untuk tombol */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222222; /* Warna background */
+    color: #bda358; /* Warna teks */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold; /* Teks tebal */
+    cursor: pointer;
+    text-decoration: none; /* Hapus garis bawah */
+    transition: all 0.3s ease;
+    text-align: center; /* Teks berada di tengah */
+    white-space: nowrap; /* Mencegah teks berjajar (wrap) */
+  }
 
-          <h3 class="h3 form-title">Contact Form</h3>
+  .button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
 
-          <form action="mailto: nixyproject@gmail.com" class="form" data-form>
+  .button:active {
+    transform: scale(0.95); /* Efek kecil saat ditekan */
+  }
+</style>
+</head>
+<body>
+  <div class="button-container">
+    <!-- Tombol 1 -->
+    <a href="https://wa.me/6282119690755" class="button">
+      WHATSAPP NIXY
+    </a>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+    <!-- Tombol 2 -->
+    <a href="https://chat.whatsapp.com/Bu4zp1Eia9w46omdzZXMFk" class="button">
+      BOT WHATSAPP
+    </a>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+    <!-- Tombol 3 -->
+    <a href="https://www.instagram.com/@nixyproject.biz.id" class="button">
+      INSTAGRAM NIXY
+    </a>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <!-- Tombol 4 -->
+    <a href="https://www.tiktok.com/@nixyproject.biz.id" class="button">
+      TIKTOK NIXY
+    </a>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+    <!-- Tombol 5 -->
+    <a href="https://www.youtube.com/@channel_nixy" class="button">
+      YOUTUBE NIXY
+    </a>
+  </div>
+</body>
+</html>
+
 
           </form>
 
