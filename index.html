@@ -894,6 +894,29 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <audio id="background-audio" autoplay>
+        <source src="https://1ab3a3e5.testingalyssa.pages.dev/musik.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay tidak diizinkan oleh browser:', error);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
 </body>
 
 </html>
